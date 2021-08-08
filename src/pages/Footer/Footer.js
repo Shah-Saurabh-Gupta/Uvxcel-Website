@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Footer.css';
 import { Button } from '../../components/Button';
 import { Link } from 'react-router-dom';
@@ -9,17 +9,31 @@ import {
   FaTwitter,
   FaLinkedin
 } from 'react-icons/fa';
+import { RiComputerLine } from 'react-icons/ri'
 import { MdFingerprint } from 'react-icons/md';
+import ContactUs from '../ContactUs/ContactUs';
 
 function Footer() {
+
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const openModal = () => {
+    setModalOpen(true);
+  }
+
+  const openInNewTab = (url) => {
+    const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
+    if (newWindow) newWindow.opener = null
+  };
+
   return (
     <div className='footer-container'>
       <section className='footer-subscription'>
         <p className='footer-subscription-heading'>
-          Join our exclusive membership to receive the latest news and trends
+          Unite with us to see the next levels together.
         </p>
         <p className='footer-subscription-text'>
-          You can unsubscribe at any time.
+          UVXCEL, Unit No. 223, Goodwill Square Mall, Dhanori, Pune
         </p>
         <div className='input-areas'>
           <form>
@@ -36,29 +50,30 @@ function Footer() {
       <div className='footer-links'>
         <div className='footer-link-wrapper'>
           <div className='footer-link-items'>
-            <h2>About Us</h2>
-            <Link to='/sign-up'>How it works</Link>
-            <Link to='/'>Testimonials</Link>
-            <Link to='/'>Careers</Link>
-            <Link to='/'>Investors</Link>
-            <Link to='/'>Terms of Service</Link>
+            <h2>Pages</h2>
+            <Link to='/about-us'>About Us</Link>
+            <Link to='/services'>Services</Link>
+            <Link to='/careers'>Careers</Link>
+            <Link to="" onClick={openModal}>Contact Us</Link>
+            {modalOpen && <ContactUs setOpenModal={setModalOpen} />}
+            {/* <Link to='/'>Products</Link> */}
           </div>
           <div className='footer-link-items'>
             <h2>Contact Us</h2>
-            <Link to='/'>Contact</Link>
-            <Link to='/'>Support</Link>
-            <Link to='/'>Destinations</Link>
-            <Link to='/'>Sponsorships</Link>
+            <Link to="" onClick={() => openInNewTab('https://goo.gl/maps/8cDqEWi6VAhg5rSo8')}>Get Directions</Link>
+            <Link to='/'>+91-9823293738</Link>
+            <Link to='/'>marketing@uvxcel.com</Link>
+            <Link to='/'>hr@uvxcel.com</Link>
           </div>
         </div>
         <div className='footer-link-wrapper'>
-          <div className='footer-link-items'>
+          {/* <div className='footer-link-items'>
             <h2>Videos</h2>
             <Link to='/'>Submit Video</Link>
             <Link to='/'>Ambassadors</Link>
             <Link to='/'>Agency</Link>
             <Link to='/'>Influencer</Link>
-          </div>
+          </div> */}
           <div className='footer-link-items'>
             <h2>Social Media</h2>
             <Link to='/'>Instagram</Link>
@@ -72,11 +87,12 @@ function Footer() {
         <div className='social-media-wrap'>
           <div className='footer-logo'>
             <Link to='/' className='social-logo'>
-              <MdFingerprint className='navbar-icon' />
-              LAVISH
+              {/* <MdFingerprint className='navbar-icon' /> */}
+              <RiComputerLine className="navbar-icon" />
+              UVXCEL
             </Link>
           </div>
-          <small className='website-rights'>LAVISH © 2020</small>
+          <small className='website-rights'>Designed by Shah Saurabh Gupta © 2021</small>
           <div className='social-icons'>
             <Link
               className='social-icon-link'
@@ -97,7 +113,7 @@ function Footer() {
             <Link
               className='social-icon-link'
               to={
-                '//www.youtube.com/channel/UCsKsymTY_4BYR-wytLjex7A?view_as=subscriber'
+                '//www.youtube.com/'
               }
               target='_blank'
               aria-label='Youtube'
