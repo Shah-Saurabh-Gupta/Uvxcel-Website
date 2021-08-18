@@ -20,6 +20,10 @@ function Footer() {
   const openModal = () => {
     setModalOpen(true);
   }
+  const openTab = (url) => {
+    const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
+    if (newWindow) newWindow.opener = null
+  };
 
   const openInNewTab = (url) => {
     const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
@@ -36,7 +40,7 @@ function Footer() {
           UVXCEL, Unit No. 223, Goodwill Square Mall, Dhanori, Pune
         </p>
         <div className='input-areas'>
-          <form>
+          {/* <form>
             <input
               className='footer-input'
               name='email'
@@ -44,7 +48,7 @@ function Footer() {
               placeholder='Your Email'
             />
             <Button buttonStyle='btn--outline'>Subscribe</Button>
-          </form>
+          </form> */}
         </div>
       </section>
       <div className='footer-links'>
@@ -63,7 +67,7 @@ function Footer() {
             <Link to="" onClick={() => openInNewTab('https://goo.gl/maps/8cDqEWi6VAhg5rSo8')}>Get Directions</Link>
             <Link to='/'>+91-9823293738</Link>
             <Link to='/'>marketing@uvxcel.com</Link>
-            <Link to='/'>hr@uvxcel.com</Link>
+            {/* <Link to='/'>hr@uvxcel.com</Link> */}
           </div>
         </div>
         <div className='footer-link-wrapper'>
@@ -76,10 +80,10 @@ function Footer() {
           </div> */}
           <div className='footer-link-items'>
             <h2>Social Media</h2>
-            <Link to='/'>Instagram</Link>
-            <Link to='/'>Facebook</Link>
+            <Link to='' onClick={() => openTab('https://www.linkedin.com/company/uvxcel-it-solutions')}>LinkedIn</Link>
+            {/* <Link to='/'>Facebook</Link>
             <Link to='/'>Youtube</Link>
-            <Link to='/'>Twitter</Link>
+            <Link to='/'>Twitter</Link> */}
           </div>
         </div>
       </div>
@@ -94,7 +98,7 @@ function Footer() {
           </div>
           <small className='website-rights'>Designed by Shah Saurabh Gupta © 2021</small>
           <div className='social-icons'>
-            <Link
+            {/* <Link
               className='social-icon-link'
               to='/'
               target='_blank'
@@ -127,10 +131,10 @@ function Footer() {
               aria-label='Twitter'
             >
               <FaTwitter />
-            </Link>
+            </Link> */}
             <Link
               className='social-icon-link'
-              to='/'
+              to={'//www.linkedin.com/company/uvxcel-it-solutions'}
               target='_blank'
               aria-label='LinkedIn'
             >
