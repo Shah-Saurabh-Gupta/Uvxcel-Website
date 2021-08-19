@@ -2,12 +2,17 @@ import React from 'react'
 import Banner from '../../components/Banner'
 import AboutImg from './aboutus2.svg'
 import './AboutUs.css'
+import AboutSection from '../../components/AboutSections/AboutSection'
+import { aboutObjOne, aboutObjTwo, aboutObjThree } from './Data';
 
 function AboutUs() {
     return (
         <div className="about-us">
             <Banner />
-            <div className="about">
+            <AboutSection {...aboutObjOne} />
+            <AboutSection {...aboutObjTwo} />
+            <AboutSection {...aboutObjThree} />
+            {/* <div className="about">
                 <div className="about-model">
                     <img src={AboutImg} alt="about image" />
                 </div>
@@ -34,7 +39,7 @@ We aim to emerge as the preferred technology partner for our clients/ businesses
 We strongly believe that the right partnership and collaboration lays the foundation for sustained growth and excellence, 
 
 thus, United We Excel.</p>
-                    {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Vivamus at enim faucibus, faucibus mauris non, placerat nunc.
                         Nulla et ornare lacus, vel sagittis mauris.
                         Ut rutrum purus metus, ac molestie magna vehicula quis.
@@ -42,10 +47,10 @@ thus, United We Excel.</p>
                         Phasellus tellus sem, porta ut magna non, sagittis luctus lectus.
                         Nam faucibus sem sit amet aliquam consectetur. Suspendisse potenti.
                         Vestibulum vel laoreet neque, id placerat tortor.
-                        Nullam facilisis mauris felis, ac pulvinar eros ullamcorper vitae.</p> */}
+                        Nullam facilisis mauris felis, ac pulvinar eros ullamcorper vitae.</p>
                     <button>View More Details</button>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }
