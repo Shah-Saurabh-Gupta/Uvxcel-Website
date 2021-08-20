@@ -54,9 +54,10 @@ function Footer() {
       <div className='footer-links'>
         <div className='footer-link-wrapper'>
           <div className='footer-link-items'>
-            <h2>Pages</h2>
+            <h2>Site Map</h2>
             <Link to='/about-us'>About Us</Link>
             <Link to='/services'>Services</Link>
+            <Link to='/products'>Products</Link>
             <Link to='/careers'>Careers</Link>
             <Link to="" onClick={openModal}>Contact Us</Link>
             {modalOpen && <ContactUs setOpenModal={setModalOpen} />}
@@ -64,7 +65,7 @@ function Footer() {
           </div>
           <div className='footer-link-items'>
             <h2>Contact Us</h2>
-            <Link to="" onClick={() => openInNewTab('https://goo.gl/maps/8cDqEWi6VAhg5rSo8')}>Get Directions</Link>
+            <Link to="" onClick={() => openInNewTab('https://goo.gl/maps/8cDqEWi6VAhg5rSo8')}>Get Directions on Map</Link>
             <Link to='/'>+91-9823293738</Link>
             <Link to='/'>marketing@uvxcel.com</Link>
             {/* <Link to='/'>hr@uvxcel.com</Link> */}

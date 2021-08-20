@@ -194,7 +194,7 @@
 
 .modal-input-login a {
     text-decoration: none;
-    color: #F83205;
+    color: #F83205 !important;
     font-size: 600;
 }
 
