@@ -1,7 +1,7 @@
 import React from 'react'
-import './Banner.css'
+import './AboutBanner.css'
 
-function Banner() {
+function AboutBanner() {
     return (
         <>
             <div className="how-it-works">
@@ -30,4 +30,4 @@ function Banner() {
     )
 }
 
-export default Banner
+export default AboutBanner
