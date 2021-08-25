@@ -1,0 +1,111 @@
+:root {
+    --primary-bg-color: #eee;
+    --secondary-bg-color: #fff;
+    --primary-text-color: #666;
+    --secondary-text-color: #00378A;
+}
+
+* {
+    transition: all 0.2s linear;
+}
+
+.product-container {
+    /* min-height: 100vh; */
+    padding: 20px 9%;
+    background: var(--primary-bg-color);
+    padding-bottom: 80px;
+}
+
+.product-container .title {
+    text-align: center;
+    color: var(--primary-text-color);
+    font-size: 50px;
+    padding: 15px 0;
+    text-transform: uppercase;
+    border: 1px solid blue;
+}
+
+.product-container .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.product-container .box-container .box {
+    flex: 1 1 300px;
+    text-align: center;
+    background: var(--secondary-bg-color);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.product-container .box-container .box i {
+    font-size: 40px;
+    height: 80px;
+    width: 80px;
+    line-height: 80px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    margin: 10px 0;
+    color: var(--primary-text-color);
+}
+
+.product-container .box-container .box h3 {
+    font-size: 25px;
+    color: var(--primary-text-color);
+}
+
+.product-container .box-container .box p {
+    font-size: 16px;
+    color: var(--secondary-text-color);
+    padding: 10px;
+    line-height: 1.5rem;
+    text-align: left;
+}
+
+.product-container .box-container .box .number {
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    font-weight: bolder;
+    font-size: 50px;
+    color: #fff;
+}
+
+.product-container .box-container .box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    transition: 0.3s linear;
+    background: #F83205;
+    clip-path: circle(24% at 5% 0);
+}
+
+.product-container .box-container .box:hover::before {
+    clip-path: circle(100%);
+}
+
+.product-container .box-container .box:hover>* {
+    color: #fff;
+}
+.product-container .box-container .box:hover>h3 {
+    color:var(--secondary-text-color);
+}
+
+@media (max-width:768px) {
+    .product-container {
+        padding: 80px 20px;
+    }
+    .product-container .title {
+        font-size: 35px;
+    }
+}
