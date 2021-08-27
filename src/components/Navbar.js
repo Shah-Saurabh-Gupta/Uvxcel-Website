@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { HashLink } from 'react-router-hash-link'
-import { MdFingerprint } from 'react-icons/md'
+//import { HashLink } from 'react-router-hash-link'
+//import { MdFingerprint } from 'react-icons/md'
 import { IconContext } from 'react-icons/lib'
 import { FaBars, FaTimes } from 'react-icons/fa'
 //import { ReactComponent as Logo } from './Homepage.svg'
@@ -19,10 +19,6 @@ function Navbar() {
     const openModal = () => {
         setModalOpen(true);
     }
-    // const contactUsModalHandler = () => {
-    //     // setClick(false);
-    //     setShowModal(prev => !prev)
-    // }
 
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
@@ -66,6 +62,9 @@ function Navbar() {
                                 <Link to="/services" className="nav-links" onClick={closeMobileMenu}>Services</Link>
                             </li>
                             <li className="nav-item">
+                                <Link to="/products" className="nav-links" onClick={closeMobileMenu}>Products</Link>
+                            </li>
+                            <li className="nav-item">
                                 <Link to="/careers" className="nav-links" onClick={closeMobileMenu}>Careers</Link>
                             </li>
                             <li className="nav-btn">
@@ -86,24 +85,6 @@ function Navbar() {
                                     // </Link>
                                 )}
                             </li>
-                            {/* <li className="nav-item">
-                            <Link to="/contact-us" className="nav-links" onClick={closeMobileMenu}>Contact Us</Link>
-                        </li> */}
-                            {/* <li className="nav-item">
-                            <Link to="/products" className="nav-links" onClick={closeMobileMenu}>Products</Link>
-                        </li> */}
-                            {/* <li className="nav-btn">
-                            {button ? (
-                                <Link to="/sign-up" className="btn-link">
-                                    <Button buttonStyle="btn--outline">Sign Up</Button>
-                                </Link>
-                            ) : (
-                                <Link to="/sign-up" className="btn-link" onClick={closeMobileMenu}>
-                                    <Button buttonStyle="btn--outline"
-                                        buttonSize="btn--mobile">SignUp</Button>
-                                </Link>
-                            )}
-                        </li> */}
                         </ul>
                     </div>
                 </div>
