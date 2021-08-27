@@ -1,28 +1,12 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
-import ContactUs from '../pages/ContactUs/ContactUs';
+import React from 'react'
 import { Button } from './Button'
 import './HeroSection.css'
+import Logo from './logo.png'
 
 
 function HeroSection({
     lightBg, topLine, lightText, lightTextDesc, headline, description, buttonLabel, img, alt, imgStart
 }) {
-
-    const openInNewTab = (url) => {
-        const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
-        if (newWindow) newWindow.opener = null
-    };
-
-    // const [modalOpen, setModalOpen] = useState(false);
-    // const openModal = () => {
-    //     setModalOpen(prev => !prev);
-    // }
-    // const [showModal, setShowModal] = useState(false);
-    // const openModal = () => {
-    //     setShowModal(prev => !prev)
-    // }
-
     return (
         <>
             <div className={lightBg ? 'home__hero-section' : 'home__hero-section darkBg'}>
@@ -32,10 +16,12 @@ function HeroSection({
                         <div className="col">
                             <div className="home__hero-text-wrapper">
                                 <div className="top-line">{topLine}</div>
-                                <h1 className={lightText ? 'heading' : 'heading dark'}>{headline}</h1>
+                                <p className={lightText ? 'home__hero-heading' : 'home__hero-heading dark'}>{headline}<span className="subheading"> - United we Excel</span></p>
                                 <p className={lightTextDesc ? 'home__hero-subtitle' : 'home__hero-subtitle dark'}>{description}</p>
                                 {/* <Link to="/contact-us"> */}
-                                <Button onClick={() => openInNewTab('https://undraw.co/search')} buttonSize='btn--wide' buttonColor='red'>{buttonLabel}</Button>
+                                <a href={Logo} download="Logo">
+                                    <Button buttonSize='btn--wide' buttonColor='red'>{buttonLabel}</Button>
+                                </a>
                                 {/* {modalOpen && <ContactUs setOpenModal={setModalOpen} />} */}
                                 {/* </Link> */}
                             </div>
@@ -53,3 +39,4 @@ function HeroSection({
 }
 
 export default HeroSection
+//onClick={() => openInNewTab('https://undraw.co/search')}
