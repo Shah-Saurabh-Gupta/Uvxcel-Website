@@ -6,13 +6,14 @@ import Footer from './pages/Footer/Footer';
 import Services from './pages/Services/Services';
 import ContactUs from './pages/ContactUs/ContactUs';
 import AboutUs from './pages/AboutUs/AboutUs';
-import Test from './pages/Test/Test';
 import Products from './pages/Products/Products';
 import Careers from './pages/Careers/Careers';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Navbar />
       <Switch>
         <Route path="/" exact component={Home} />
@@ -23,7 +24,6 @@ function App() {
         <Route path="/contact-us" exact component={ContactUs} />
       </Switch>
       <Footer />
-      <Test />
     </Router>
 
   );
