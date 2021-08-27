@@ -44,7 +44,7 @@
     z-index: 0;
 }
 
-.service-container .box-container .box i {
+.service-container .box-container .box .icon-style i {
     font-size: 40px;
     height: 80px;
     width: 80px;
@@ -64,10 +64,15 @@
     font-size: 16px;
     color: var(--secondary-text-color);
     padding: 10px;
-    line-height: 1.5rem;
+    line-height: 1.8rem;
     text-align: left;
 }
-
+.service-container .box-container .box p .arrow-style{
+    font-size: 20px !important;
+    line-height: 20px !important;
+    margin: 15px 0 !important;
+    color: var(--primary-text-color) !important;
+}
 .service-container .box-container .box .number {
     position: absolute;
     top: 5px;
@@ -98,7 +103,7 @@
     color: #fff;
 }
 .service-container .box-container .box:hover>h3 {
-    color:var(--secondary-text-color);
+    color:#fff;
 }
 
 @media (max-width:768px) {

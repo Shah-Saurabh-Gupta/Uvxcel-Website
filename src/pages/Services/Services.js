@@ -1,7 +1,4 @@
-import React, { useState } from 'react'
-import { Button } from '../../components/Button';
-import ServiceCard from '../../components/ServiceCard/ServiceCard'
-import ServiceModal from '../../components/ServiceModal/ServiceModal';
+import React from 'react'
 import Banner from '../../components/shared/Banner';
 import './Services.css'
 
@@ -14,91 +11,91 @@ function Services() {
                 <div className="box-container">
                     <div className="box">
                         <span className="number">01</span>
-                        <i className="fas fa-code"></i>
+                        <span className="icon-style"><i className="fas fa-code"></i></span>
                         <h3>Infrastructure Management</h3>
-                        <p>1. OnPrem Infra Management<br />
-                            2. Cloud Management<br />
-                            3. Hybrid Management<br />
-                            4. Database Management<br />
-                            5. Network & Storage Management<br />
-                            6. Backup & Recovery Management</p>
+                        <p><span className="arrow-style"><i class="fas fa-arrow-right"></i></span> OnPrem Infra Management<br />
+                            <span className="arrow-style"><i class="fas fa-arrow-right"></i></span> Cloud Management<br />
+                            <span className="arrow-style"><i class="fas fa-arrow-right"></i></span> Hybrid Management<br />
+                            <span className="arrow-style"><i class="fas fa-arrow-right"></i></span> Database Management<br />
+                            <span className="arrow-style"><i class="fas fa-arrow-right"></i></span> Network & Storage Management<br />
+                            <span className="arrow-style"><i class="fas fa-arrow-right"></i></span> Backup & Recovery Management</p>
                     </div>
                     <div className="box">
                         <span className="number">02</span>
-                        <i className="fas fa-paint-brush"></i>
+                        <span className="icon-style"><i className="fas fa-paint-brush"></i></span>
                         <h3>E-commerce</h3>
-                        <p>1. eCommerce Product Development and Integration<br />
-                            2. eCommerce Platform Analysis, Fitment, Recommendations<br />
-                            3. eCommerce Platform Services and Implementation<br />
-                            4. Omni-Channel Implementation<br />
-                            5. Integrations with Backoffice Systems like WMS, OMS, ERP, Logistics</p>
+                        <p><span className="arrow-style"><i class="fas fa-arrow-right"></i></span> eCommerce Product Development and Integration<br />
+                            <span className="arrow-style"><i class="fas fa-arrow-right"></i></span> eCommerce Platform Analysis, Fitment, Recommendations<br />
+                            <span className="arrow-style"><i class="fas fa-arrow-right"></i></span> eCommerce Platform Services and Implementation<br />
+                            <span className="arrow-style"><i class="fas fa-arrow-right"></i></span> Omni-Channel Implementation<br />
+                            <span className="arrow-style"><i class="fas fa-arrow-right"></i></span> Integrations with Backoffice Systems like WMS, OMS, ERP, Logistics</p>
                     </div>
                     <div className="box">
                         <span className="number">03</span>
-                        <i className="fas fa-bullhorn"></i>
+                        <span className="icon-style"><i className="fas fa-bullhorn"></i></span>
                         <h3>Business Intelligence</h3>
-                        <p>1. Data Sources Management<br />
-                            2. Data Warehousing<br />
-                            3. Real-time BI<br />
-                            4. Corporate Performance Management( CPM)<br />
-                            5. OLAP (Online Analytical Processing)</p>
+                        <p><span className="arrow-style"><i class="fas fa-arrow-right"></i></span> Data Sources Management<br />
+                            <span className="arrow-style"><i class="fas fa-arrow-right"></i></span> Data Warehousing<br />
+                            <span className="arrow-style"><i class="fas fa-arrow-right"></i></span> Real-time BI<br />
+                            <span className="arrow-style"><i class="fas fa-arrow-right"></i></span> Corporate Performance Management( CPM)<br />
+                            <span className="arrow-style"><i class="fas fa-arrow-right"></i></span> OLAP (Online Analytical Processing)</p>
                     </div>
                     <div className="box">
                         <span className="number">04</span>
-                        <i className="fas fa-mobile"></i>
+                        <span className="icon-style"><i className="fas fa-mobile"></i></span>
                         <h3>E-learning</h3>
-                        <p>1.Interactive Web-Based Learning<br />
-                            2. Simulation Based Learning<br />
-                            3. Scenario Based Learning<br />
-                            4. Gamification<br />
-                            5. SaaS Application Offerings<br />
-                            6. Individual Applications<br />
-                            7. Custom Learning Modules</p>
+                        <p><span className="arrow-style"><i class="fas fa-arrow-right"></i></span>Interactive Web-Based Learning<br />
+                            <span className="arrow-style"><i class="fas fa-arrow-right"></i></span> Simulation Based Learning<br />
+                            <span className="arrow-style"><i class="fas fa-arrow-right"></i></span> Scenario Based Learning<br />
+                            <span className="arrow-style"><i class="fas fa-arrow-right"></i></span> Gamification<br />
+                            <span className="arrow-style"><i class="fas fa-arrow-right"></i></span> SaaS Application Offerings<br />
+                            <span className="arrow-style"><i class="fas fa-arrow-right"></i></span> Individual Applications<br />
+                            <span className="arrow-style"><i class="fas fa-arrow-right"></i></span> Custom Learning Modules</p>
                     </div>
                     <div className="box">
                         <span className="number">05</span>
-                        <i className="fab fa-wordpress"></i>
+                        <span className="icon-style"><i className="fab fa-wordpress"></i></span>
                         <h3>Application Development</h3>
-                        <p>1. Dnyanda - An education app for students from under-privileged section.</p>
+                        <p><span className="arrow-style"><i class="fas fa-arrow-right"></i></span> Dnyanda - An education app for students from under-privileged section.</p>
                     </div>
                     <div className="box">
                         <span className="number">06</span>
-                        <i className="fas fa-tools"></i>
+                        <span className="icon-style"><i className="fas fa-tools"></i></span>
                         <h3>Product Engineering</h3>
-                        <p>1. Ideation & Conceptualization<br />
-                            2. Business Analysis<br />
-                            3. Architecture & Design<br />
-                            4. Development<br />
-                            5. Test Automation<br />
-                            6. Release Management & DevOps<br />
-                            7. Sustained Engineering & Support</p>
+                        <p><span className="arrow-style"><i class="fas fa-arrow-right"></i></span> Ideation & Conceptualization<br />
+                            <span className="arrow-style"><i class="fas fa-arrow-right"></i></span> Business Analysis<br />
+                            <span className="arrow-style"><i class="fas fa-arrow-right"></i></span> Architecture & Design<br />
+                            <span className="arrow-style"><i class="fas fa-arrow-right"></i></span> Development<br />
+                            <span className="arrow-style"><i class="fas fa-arrow-right"></i></span> Test Automation<br />
+                            <span className="arrow-style"><i class="fas fa-arrow-right"></i></span> Release Management & DevOps<br />
+                            <span className="arrow-style"><i class="fas fa-arrow-right"></i></span> Sustained Engineering & Support</p>
                     </div>
                     <div className="box">
                         <span className="number">07</span>
-                        <i className="fas fa-moon"></i>
+                        <span className="icon-style"><i className="fas fa-moon"></i></span>
                         <h3>Mobile Applicatons</h3>
-                        <p>1. Mobile App Development<br />
-                            2. Cross Platform<br />
-                            3. UI/ UX and Security<br />
-                            4. Digital Innovation<br />
-                            5. Connecting across touchpoints</p>
+                        <p><span className="arrow-style"><i class="fas fa-arrow-right"></i></span> Mobile App Development<br />
+                            <span className="arrow-style"><i class="fas fa-arrow-right"></i></span> Cross Platform<br />
+                            <span className="arrow-style"><i class="fas fa-arrow-right"></i></span> UI/ UX and Security<br />
+                            <span className="arrow-style"><i class="fas fa-arrow-right"></i></span> Digital Innovation<br />
+                            <span className="arrow-style"><i class="fas fa-arrow-right"></i></span> Connecting across touchpoints</p>
                     </div>
                     <div className="box">
                         <span className="number">08</span>
-                        <i className="fas fa-sun"></i>
+                        <span className="icon-style"><i className="fas fa-sun"></i></span>
                         <h3>Software as Service offering</h3>
-                        <p>1. SaaS offerings for Education Institutes, Medical Facilities, Groceries, Essential Goods and MSMEs.</p>
+                        <p><span className="arrow-style"><i class="fas fa-arrow-right"></i></span> SaaS offerings for Education Institutes, Medical Facilities, Groceries, Essential Goods and MSMEs.</p>
                     </div>
                     <div className="box">
                         <span className="number">09</span>
-                        <i className="fas fa-rocket"></i>
+                        <span className="icon-style"><i className="fas fa-rocket"></i></span>
                         <h3>Entreprise Applications and Data Architecture</h3>
-                        <p>1. Business Centric Architecture<br />
-                            2. Smart & Adaptable<br />
-                            3. Collaboration & Governance<br />
-                            4 .Secure & Resilient<br />
-                            5. Robust & Scalable<br />
-                            6. Centralized Management</p>
+                        <p><span className="arrow-style"><i class="fas fa-arrow-right"></i></span> Business Centric Architecture<br />
+                            <span className="arrow-style"><i class="fas fa-arrow-right"></i></span> Smart & Adaptable<br />
+                            <span className="arrow-style"><i class="fas fa-arrow-right"></i></span> Collaboration & Governance<br />
+                            <span className="arrow-style"><i class="fas fa-arrow-right"></i></span> Secure & Resilient<br />
+                            <span className="arrow-style"><i class="fas fa-arrow-right"></i></span> Robust & Scalable<br />
+                            <span className="arrow-style"><i class="fas fa-arrow-right"></i></span> Centralized Management</p>
                     </div>
                 </div>
             </div>
