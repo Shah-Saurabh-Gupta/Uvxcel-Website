@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button } from './Button'
 import './HeroSection.css'
-import Logo from './logo.png'
+import PDF from '../assets/uvXcel_Introduction.pdf'
 
 
 function HeroSection({
@@ -18,12 +18,9 @@ function HeroSection({
                                 <div className="top-line">{topLine}</div>
                                 <p className={lightText ? 'home__hero-heading' : 'home__hero-heading dark'}>{headline}<span className="subheading"> - United we Excel</span></p>
                                 <p className={lightTextDesc ? 'home__hero-subtitle' : 'home__hero-subtitle dark'}>{description}</p>
-                                {/* <Link to="/contact-us"> */}
-                                <a href={Logo} download="Logo">
+                                <a href={PDF} download="uvXcel Flyer">
                                     <Button buttonSize='btn--wide' buttonColor='red'>{buttonLabel}</Button>
                                 </a>
-                                {/* {modalOpen && <ContactUs setOpenModal={setModalOpen} />} */}
-                                {/* </Link> */}
                             </div>
                         </div>
                         <div className="col">
@@ -39,4 +36,3 @@ function HeroSection({
 }
 
 export default HeroSection
-//onClick={() => openInNewTab('https://undraw.co/search')}
