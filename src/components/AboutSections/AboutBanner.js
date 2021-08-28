@@ -11,17 +11,17 @@ function AboutBanner() {
                         <div>
                             <span className="fas fa-home"></span>
                             <h4>How we started</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+                            <p>Set up by a group of friends with personal experience over a century</p>
                         </div>
                         <div>
                             <span className="fas fa-dollar-sign"></span>
                             <h4>Our Work Culture</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+                            <p>To leverage the discrete yet associated experience to partner with our clients to simplify their operations</p>
                         </div>
                         <div>
                             <span className="fas fa-chart-line"></span>
                             <h4>Our Vision</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+                            <p> We aim to emerge as the preferred technology partner for our clients by powering them through innovative focused solutions</p>
                         </div>
                     </div>
                 </div>
