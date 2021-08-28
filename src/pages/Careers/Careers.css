@@ -1,0 +1,17 @@
+.second-heading{
+    text-align: center;
+    font-style: italic;
+    font-weight: bolder;
+    margin: 30px 0px;
+}
+.form-styling{
+    /* border: 1px solid blueviolet; */
+    display: flex;
+    justify-content: center;
+    margin: 0px 20px;
+    padding: 15px;
+}
+.form-styling iframe{
+    height: 100vh;
+    width: 100vw;
+}
