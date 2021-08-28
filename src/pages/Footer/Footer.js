@@ -1,16 +1,11 @@
 import React, { useState } from 'react';
 import './Footer.css';
-import { Button } from '../../components/Button';
+//import { Button } from '../../components/Button';
 import { Link } from 'react-router-dom';
-import {
-  FaFacebook,
-  FaInstagram,
-  FaYoutube,
-  FaTwitter,
-  FaLinkedin
-} from 'react-icons/fa';
+//import { FaFacebook, FaInstagram, FaYoutube, FaTwitter } from 'react-icons/fa';
+import { FaLinkedin } from 'react-icons/fa';
 import { RiComputerLine } from 'react-icons/ri'
-import { MdFingerprint } from 'react-icons/md';
+//import { MdFingerprint } from 'react-icons/md';
 import ContactUs from '../ContactUs/ContactUs';
 
 function Footer() {
@@ -97,7 +92,7 @@ function Footer() {
               UVXCEL
             </Link>
           </div>
-          <small className='website-rights'>Designed by Shah Saurabh Gupta © 2021</small>
+          <small className='website-rights' onClick={() => openTab('https://github.com/Shah-Saurabh-Gupta')}>Designed by Shah Saurabh Gupta © 2021</small>
           <div className='social-icons'>
             {/* <Link
               className='social-icon-link'
