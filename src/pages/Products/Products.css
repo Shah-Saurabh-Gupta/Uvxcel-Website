@@ -44,7 +44,7 @@
     z-index: 0;
 }
 
-.product-container .box-container .box i {
+.product-container .box-container .box .icon-style i {
     font-size: 40px;
     height: 80px;
     width: 80px;
@@ -64,10 +64,15 @@
     font-size: 16px;
     color: var(--secondary-text-color);
     padding: 10px;
-    line-height: 1.5rem;
+    line-height: 1.8rem;
     text-align: left;
 }
-
+.product-container .box-container .box p .arrow-style{
+    font-size: 20px !important;
+    line-height: 20px !important;
+    margin: 15px 0 !important;
+    color: var(--primary-text-color) !important;
+}
 .product-container .box-container .box .number {
     position: absolute;
     top: 5px;
@@ -87,7 +92,7 @@
     z-index: -1;
     transition: 0.3s linear;
     background: #F83205;
-    clip-path: circle(24% at 5% 0);
+    clip-path: circle(20% at 5% 0);
 }
 
 .product-container .box-container .box:hover::before {
