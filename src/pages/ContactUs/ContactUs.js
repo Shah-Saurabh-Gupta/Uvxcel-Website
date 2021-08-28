@@ -1,18 +1,9 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import emailjs from 'emailjs-com'
-import useForm from '../../hooks/useForm'
-import validate from './ValidateInfo'
 import './ContactUs.css'
 
 function ContactUs({ setOpenModal }) {
-
-    // function submitForm() {
-    //     setIsSubmitted(true);
-    // };
-
-    // const { handleChange, values, handleSubmit, errors } = useForm(validate, submitForm);
-    // const [isSubmitted, setIsSubmitted] = useState(false);
 
     const closeModal = () => {
         setOpenModal(false);
@@ -23,9 +14,9 @@ function ContactUs({ setOpenModal }) {
 
         emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
             .then((result) => {
-                console.log(result.text);
+              //  console.log(result.text);
             }, (error) => {
-                console.log(error.text);
+               // console.log(error.text);
             });
     }
 
@@ -55,18 +46,8 @@ function ContactUs({ setOpenModal }) {
                                 </div>
                                 <div className="form-validation">
                                     {/* <label htmlFor="number">Message</label> */}
-                                    <textarea className="modal-textarea" placeholder="Enter your message" rows="5" cols="60" ></textarea>
+                                    <textarea className="modal-textarea" placeholder="Enter your message" name="message" rows="5" cols="60" ></textarea>
                                 </div>
-                                {/* <div className="form-validation">
-                                    <label htmlFor="password">Password</label>
-                                    <input type="password" className="modal-input" id="password" name="password" placeholder="Enter your password" />
-                                  
-                                </div>
-                                <div className="form-validation">
-                                    <label htmlFor="password2">Confirm Password</label>
-                                    <input type="password" className="modal-input" id="password2" name="password2" placeholder="Confirm your password" />
-                                    
-                                </div> */}
                                 <input type="submit" className="modal-input-btn" value="Send"></input>
                                 <span className="modal-input-login">Want to goto home? Click <Link to="/" onClick={closeModal}>here</Link></span>
                             </form>
