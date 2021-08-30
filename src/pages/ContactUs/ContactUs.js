@@ -9,17 +9,6 @@ function ContactUs({ setOpenModal }) {
         setOpenModal(false);
     }
 
-    function sendEmail(e) {
-        e.preventDefault();
-
-        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
-            .then((result) => {
-              //  console.log(result.text);
-            }, (error) => {
-               // console.log(error.text);
-            });
-    }
-
     return (
         <>
             <div className="modal-card">
@@ -30,7 +19,7 @@ function ContactUs({ setOpenModal }) {
                             <img id="modal-img" src="images/contactus.svg" alt="" />
                         </div>
                         <div className="modal-content-right">
-                            <form className="modal-form form" id="form" onSubmit={sendEmail}>
+                            <form className="modal-form form" id="form" action="mailto:marketing@uvxcel.com" method="GET" target="_blank">
                                 <h1>We would love to hear from you. Send us a feedback!</h1>
                                 <div className="form-validation">
                                     {/* <label htmlFor="username">Name</label> */}
