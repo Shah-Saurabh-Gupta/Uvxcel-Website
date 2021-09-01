@@ -14,6 +14,8 @@
     padding: 3rem 0;
     background: #1c2237;
     text-align: center;
+    /* position: sticky;
+    top: 80px; */
 }
 
 .how-it-works h2 {
@@ -32,6 +34,10 @@
 .how-it-works h4 {
     color: #ffffff;
     margin-top: 1rem;
+}
+
+.scrollh4:hover {
+    cursor: pointer;
 }
 
 .how-it-works p {

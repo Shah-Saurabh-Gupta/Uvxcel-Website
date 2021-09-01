@@ -15,7 +15,7 @@ function HeroSection({
                         style={{ display: 'flex', flexDirection: imgStart === 'start' ? 'row-reverse' : 'row' }}>
                         <div className="col">
                             <div className="home__hero-text-wrapper">
-                                <div className="top-line">{topLine}</div>
+                                {/* <div className="top-line">{topLine}</div> */}
                                 <p className={lightText ? 'home__hero-heading' : 'home__hero-heading dark'}>{headline}<span className="subheading"> - United we Excel</span></p>
                                 <p className={lightTextDesc ? 'home__hero-subtitle' : 'home__hero-subtitle dark'}>{description}</p>
                                 <a href={PDF} download="uvXcel Flyer">

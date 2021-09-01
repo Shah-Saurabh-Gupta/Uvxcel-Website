@@ -1,11 +1,12 @@
 export const aboutObjOne = {
+    id: "beginning",
     lightBg: true,
     lightText: false,
     lightTextDesc: false,
     topLine: 'HOW WE STARTED',
     headline: 'Our Humble Beginnings',
     description:
-        "uvXcel - is contradictorily a startup that has been set up by a group of like minded friends with collective professional experience of over a century (About 120 years and counting) in various domains and computer science technologies.Each individual comes from similar culture, family background, academic qualification and more importantly with strong trust, values, principles, ethics and ambitions.",
+        `uvXcel - is contradictorily a startup that has been set up by a group of like minded friends with collective professional experience of over a century (About 120 years and counting) in various domains and computer science technologies.Each individual comes from similar culture, family background, academic qualification and more importantly with strong trust, values, principles, ethics and ambitions.`,
     imgStart: 'start',
     img: 'images/aboutus_beginning.svg',
     alt: 'Beginnings'
@@ -13,6 +14,7 @@ export const aboutObjOne = {
 
 
 export const aboutObjTwo = {
+    id: "workCulture",
     lightBg: false,
     lightText: true,
     lightTextDesc: true,
@@ -26,11 +28,12 @@ export const aboutObjTwo = {
 };
 
 export const aboutObjThree = {
+    id: "vision",
     lightBg: true,
     lightText: false,
     lightTextDesc: false,
     topLine: 'OUR VISION',
-    headline: 'By Toil to Stars',
+    headline: '',
     description:
         "We aim to emerge as the preferred technology partner for our clients/ businesses, by powering them through innovative focused solutions for their real life problems with the right blend of time, cost and quality that will assure the projected growth. We strongly believe that the right partnership and collaboration lays the foundation for sustained growth and excellence, thus, United We Excel.",
     imgStart: 'start',
