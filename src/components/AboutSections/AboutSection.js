@@ -17,7 +17,11 @@ function AboutSection({
                                 <div className="about__hero-text-wrapper">
                                     <div className="top-line">{topLine}</div>
                                     <h1 className={lightText ? 'heading' : 'heading dark'}>{headline}</h1>
-                                    <p className={lightTextDesc ? 'about__hero-subtitle' : 'about__hero-subtitle dark'}>{description}</p>
+                                    <p className={lightTextDesc ? 'about__hero-subtitle' : 'about__hero-subtitle dark'}
+                                        dangerouslySetInnerHTML={{ __html: description }}>
+                                    </p>
+                                    {/* Add description prop inside p tag as shown <p>{description}</p> and remove the dangerouslySetInnerHTML property fully to have a same styling for every word instead of different styling for selected few.
+                                     As it is a dangerous practice and wrong use may open website to cross-site scripting (XSS) attacks. */}
                                 </div>
                             </div>
                             <div className="col">
