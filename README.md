@@ -1,6 +1,6 @@
 ## How to view the Live Project
 
-Open the Wiki Tab of this repository. In that section all the information about the project along with the Project Url link is given. You can read about the functions and modules from there. Also you can visit the Project Url link to see the live demo of it. Contact me for any help needed.
+Link: https://pensive-knuth-a0bef6.netlify.app
 
 ## Screenshots of Frontend part of the website
 <img width="947" alt="HomePage" src="https://user-images.githubusercontent.com/68224553/131149739-4d072198-fa8d-4a7c-ad00-a6355644fcaf.PNG">
